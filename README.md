@@ -76,7 +76,7 @@ SEC_USER_AGENT=Finance Agent your-email@example.com
 | Provider | API key | Default model | Notes |
 | --- | --- | --- | --- |
 | **OpenAI** | `OPENAI_API_KEY` | `gpt-4o` | Uses Responses API by default; set `OPENAI_API_MODE=chat_completions` to force chat API |
-| **Anthropic** | `ANTHROPIC_API_KEY` | `claude-sonnet-4-20250514` | [OpenAI-compatible endpoint](https://docs.anthropic.com/en/api/openai-sdk) |
+| **Anthropic** | `ANTHROPIC_API_KEY` | `claude-opus-5-5` | [OpenAI-compatible endpoint](https://docs.anthropic.com/en/api/openai-sdk) |
 | **Google** | `GOOGLE_API_KEY` | `gemini-2.0-flash` | [Gemini OpenAI compatibility](https://ai.google.dev/gemini-api/docs/openai) |
 | **Moonshot (Kimi)** | `MOONSHOT_API_KEY` | `kimi-k2.6` | [Moonshot platform](https://platform.moonshot.ai/) |
 | **OpenRouter** | `OPENROUTER_API_KEY` | `openai/gpt-4o` | One key for many upstream models — [openrouter.ai](https://openrouter.ai/) |
@@ -106,7 +106,7 @@ Use `provider/model`, similar to model ids in other agent harnesses:
 
 ```bash
 python main.py --model openai/gpt-4o
-python main.py --model anthropic/claude-sonnet-4-20250514 "Compute ratios for MSFT vs AAPL and GOOGL"
+python main.py --model anthropic/claude-opus-5-5 "Compute ratios for MSFT vs AAPL and GOOGL"
 python main.py --model google/gemini-2.0-flash
 python main.py --model moonshot/kimi-k2.6
 python main.py --model openrouter/anthropic/claude-3.5-sonnet

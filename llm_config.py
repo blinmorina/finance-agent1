@@ -50,7 +50,7 @@ _PROVIDER_DEFAULTS: dict[ProviderId, dict[str, str | bool | None]] = {
     "anthropic": {
         "api_key_env": "ANTHROPIC_API_KEY",
         "base_url": "https://api.anthropic.com/v1/",
-        "default_model": "claude-sonnet-4-20250514",
+        "default_model": "claude-opus-5-5",
         "use_chat_completions": True,
         "label": "Anthropic",
     },
@@ -215,7 +215,7 @@ def missing_provider_help() -> str:
             "Examples:",
             "  FINANCE_AGENT_PROVIDER=openai",
             "  FINANCE_AGENT_MODEL=gpt-4o",
-            "  python main.py --model anthropic/claude-sonnet-4-20250514",
+            "  python main.py --model anthropic/claude-opus-5-5",
             "  python main.py --model moonshot/kimi-k2.6",
         ]
     )

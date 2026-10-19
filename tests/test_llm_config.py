@@ -22,9 +22,9 @@ def test_parse_model_spec_kimi_alias():
 def test_resolve_llm_from_model_spec(monkeypatch):
     monkeypatch.delenv("FINANCE_AGENT_PROVIDER", raising=False)
     monkeypatch.delenv("FINANCE_AGENT_MODEL", raising=False)
-    r = resolve_llm(model_spec="anthropic/claude-sonnet-4-20250514")
+    r = resolve_llm(model_spec="anthropic/claude-opus-5-5")
     assert r.provider == "anthropic"
-    assert r.model == "claude-sonnet-4-20250514"
+    assert r.model == "claude-opus-5-5"
     assert r.use_chat_completions is True
 
 

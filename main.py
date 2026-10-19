@@ -37,7 +37,7 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         epilog=(
             "Model examples:\n"
             "  --model openai/gpt-4o\n"
-            "  --model anthropic/claude-sonnet-4-20250514\n"
+            "  --model anthropic/claude-opus-5-5\n"
             "  --model google/gemini-2.0-flash\n"
             "  --model moonshot/kimi-k2.6\n"
             "  --model openrouter/anthropic/claude-3.5-sonnet\n"
