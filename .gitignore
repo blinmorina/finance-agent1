@@ -1,0 +1,10 @@
+.env
+.ref-finance-agent-v2/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.DS_Store
+outputs/*.xlsx
+!outputs/.gitkeep
